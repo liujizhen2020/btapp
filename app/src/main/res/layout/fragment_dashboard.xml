@@ -8,7 +8,7 @@
               android:layout_height="wrap_content"
               android:text="@string/title_paired_devices"
               android:textColor="#FFFFFF"
-              android:background="#6200EE"
+              android:background="@drawable/bgselector"
               android:paddingLeft="5dp" />
     <ListView android:id="@+id/paired_devices"
               android:layout_width="match_parent"
@@ -19,12 +19,14 @@
               android:layout_height="wrap_content"
               android:text="@string/title_other_devices"
               android:textColor="#FFFFFF"
-              android:background="#6200EE"
+              android:background="@drawable/bgselector"
               android:paddingLeft="5dp" />
     <ListView android:id="@+id/new_devices"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
-              android:layout_weight="20" />
+              android:fastScrollEnabled="true"
+              android:layout_weight="20"
+             />
     <Button android:id="@+id/button_scan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
