@@ -1,44 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
               android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              tools:context="com.littletree.btapp.MainActivity">
+
     <TextView android:id="@+id/title_paired_devices"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
               android:text="@string/title_paired_devices"
               android:textColor="#FFFFFF"
-              android:background="@drawable/bgselector"
-              android:paddingLeft="5dp" />
-    <ListView android:id="@+id/paired_devices"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:layout_weight="10" />
+              android:layout_weight="19"
+              android:background="@drawable/bgselector"/>
+    <com.littletree.btapp.OverscrollListView
+              android:id="@+id/paired_devices"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
+              android:layout_weight="15">
+    </com.littletree.btapp.OverscrollListView>
     <TextView android:id="@+id/title_new_devices"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_height="match_parent"
               android:text="@string/title_other_devices"
               android:textColor="#FFFFFF"
               android:background="@drawable/bgselector"
-              android:paddingLeft="5dp" />
-    <ListView android:id="@+id/new_devices"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:fastScrollEnabled="true"
-              android:layout_weight="20"
-             />
+              android:paddingLeft="5dp"
+              android:layout_weight="19"
+    />
+    <com.littletree.btapp.OverscrollListView
+            android:id="@+id/new_devices"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10">
+    </com.littletree.btapp.OverscrollListView>
     <Button android:id="@+id/button_scan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
             android:text="@string/button_scan"
             android:textColor="#FFFFFF"
             android:background="@drawable/bgselector"
-            android:layout_weight="1"/>
-    <TextView android:id="@+id/title_none"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text=""
-              android:textColor="#FFFFFF"
-              android:paddingLeft="5dp"
-              android:layout_weight="3"/>
+            android:layout_weight="17"/>
 </LinearLayout>

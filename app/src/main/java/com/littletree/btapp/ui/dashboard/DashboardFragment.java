@@ -1,12 +1,7 @@
 package com.littletree.btapp.ui.dashboard;
 
 
-import android.bluetooth.BluetoothAdapter;
-import android.bluetooth.BluetoothDevice;
-import android.content.Intent;
-import android.content.IntentFilter;
 import android.os.Bundle;
-import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,9 +14,8 @@ import com.inuker.bluetooth.library.search.SearchRequest;
 import com.inuker.bluetooth.library.search.SearchResult;
 import com.inuker.bluetooth.library.search.response.SearchResponse;
 import com.inuker.bluetooth.library.utils.BluetoothLog;
+import com.littletree.btapp.OverscrollListView;
 import com.littletree.btapp.R;
-
-import java.util.Set;
 
 public class DashboardFragment extends Fragment {
 
@@ -45,10 +39,10 @@ public class DashboardFragment extends Fragment {
             }
         });
         mNewDevicesArrayAdapter = new ArrayAdapter<String>(getContext(),R.layout.device_name);
-        ListView newDevicesListView = root.findViewById(R.id.new_devices);
+        OverscrollListView newDevicesListView = root.findViewById(R.id.new_devices);
         newDevicesListView.setAdapter(mNewDevicesArrayAdapter);
         newDevicesListView.setOnItemClickListener(mNewDeviceClickListener);
-        newDevicesListView.setVisibility(View.VISIBLE);
+        newDevicesListView.initializeValues();
     }
 //        private void init() {
 //            Button scanButton = findViewById(R.id.button_scan);
