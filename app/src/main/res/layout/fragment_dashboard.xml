@@ -7,7 +7,7 @@
               tools:context="com.littletree.btapp.MainActivity">
 
     <TextView android:id="@+id/title_paired_devices"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:text="@string/title_paired_devices"
               android:textColor="#FFFFFF"
@@ -15,12 +15,12 @@
               android:background="@drawable/bgselector"/>
     <com.littletree.btapp.OverscrollListView
               android:id="@+id/paired_devices"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:layout_weight="15">
     </com.littletree.btapp.OverscrollListView>
     <TextView android:id="@+id/title_new_devices"
-              android:layout_width="wrap_content"
+              android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:text="@string/title_other_devices"
               android:textColor="#FFFFFF"
@@ -30,15 +30,23 @@
     />
     <com.littletree.btapp.OverscrollListView
             android:id="@+id/new_devices"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight="10">
+            android:layout_weight="11">
     </com.littletree.btapp.OverscrollListView>
     <Button android:id="@+id/button_scan"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:text="@string/button_scan"
             android:textColor="#FFFFFF"
             android:background="@drawable/bgselector"
             android:layout_weight="17"/>
+    <TextView android:id="@+id/title_empty"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text=""
+              android:textColor="#FFFFFF"
+              android:paddingLeft="5dp"
+              android:layout_weight="19"
+    />
 </LinearLayout>
