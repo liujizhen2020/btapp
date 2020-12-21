@@ -40,13 +40,13 @@
             android:text="@string/button_scan"
             android:textColor="#FFFFFF"
             android:background="@drawable/bgselector"
-            android:layout_weight="17"/>
+            android:layout_weight="18"/>
     <TextView android:id="@+id/title_empty"
               android:layout_width="match_parent"
               android:layout_height="match_parent"
               android:text=""
               android:textColor="#FFFFFF"
               android:paddingLeft="5dp"
-              android:layout_weight="19"
+              android:layout_weight="18"
     />
 </LinearLayout>
